@@ -32,20 +32,20 @@ DOMSelectors.form.addEventListener("submit", function(event){
 
 const DOMSelectors ={
     form: document.querySelector("#form"),    
-    firstname:document.querySelector(".firstname"),
-    lastname: document.querySelector(".lastname"),
-    osis: document.querySelector(".osis"),
-    firstnameoutput: document.querySelector("#firstnameoutput"),
-    lastnameoutput: document.querySelector("#lastnameoutput"),
-    osisoutput: document.querySelector("#osisoutput"),
+    dogbreed:document.querySelector(".dogbreed"),
+    name: document.querySelector(".name"),
+    pic: document.querySelector(".pic"),
+    dogbreedoutput: document.querySelector("#dogbreedoutput"),
+    nameoutput: document.querySelector("#nameoutput"),
+    picoutput: document.querySelector("#picoutput"),
 };
 
 DOMSelectors.form.addEventListener("submit", function(event){
     event.preventDefault();
-    const firstname = DOMSelectors.firstname.value
-    const lastname = DOMSelectors.lastname.value
-    const osis = DOMSelectors.osis.value
-    DOMSelectors.firstnameoutput.innerText = firstname
-    DOMSelectors.lastnameoutput.innerText = lastname
-    DOMSelectors.osisoutput.innerText = osis
+    const dogbreed = DOMSelectors.dogbreed.value
+    const name = DOMSelectors.name.value
+    const pic = DOMSelectors.pic.value
+    DOMSelectors.dogbreedoutput.innerText = dogbreed
+    DOMSelectors.nameoutput.innerText = name
+    DOMSelectors.picoutput.innerText = pic
 });
