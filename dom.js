@@ -47,5 +47,21 @@ DOMSelectors.form.addEventListener("submit", function(event){
     const pic = DOMSelectors.pic.value
     DOMSelectors.dogbreedoutput.innerText = dogbreed
     DOMSelectors.nameoutput.innerText = name
-    DOMSelectors.picoutput.innerText = pic
+    DOMSelectors.picoutput.innerHTML = `<img src="${pic}"/>`
 });
+
+/*
+DOMSelectors.form.addEventListener("submit", function(event){
+    event.preventDefault();
+    document.querySelector(".gallery")
+    .insertAdjacentHTML(
+        "afterbegin", 
+        '<div class="card"> <h2 class="card header"> ${}</h2></div>'
+        
+
+    );
+
+
+});
+
+*/
