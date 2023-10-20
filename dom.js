@@ -56,7 +56,7 @@ DOMSelectors.form.addEventListener("submit", function(event){
     document.querySelector(".gallery")
     .insertAdjacentHTML(
         "afterbegin", 
-        '<div class="card"> <h2 class="card header"> ${}</h2></div>'
+        `<div class="card"> <h2 class="card header"> ${}</h2></div>`
         
 
     );
