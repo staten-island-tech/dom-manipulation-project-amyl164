@@ -39,9 +39,12 @@ const DOMSelectors ={
     nameoutput: document.querySelector("#nameoutput"),
     picoutput: document.querySelector("#picoutput"),
     gallery: document.querySelector(".gallery"),
+    class: document.querySelector(".class"),
+    cardheader: document.querySelector(".cardheader"),
+
 
 };
-
+function create(){
 DOMSelectors.form.addEventListener("submit", function(event){
     event.preventDefault();
     const dogbreed = DOMSelectors.dogbreed.value
@@ -49,18 +52,18 @@ DOMSelectors.form.addEventListener("submit", function(event){
     const pic = DOMSelectors.pic.value
     DOMSelectors.dogbreedoutput.innerText = dogbreed
     DOMSelectors.nameoutput.innerText = name
-    DOMSelectors.picoutput.innerHTML = pic //`<img src="${pic}"/>`
+    DOMSelectors.picoutput.innerHTML = `<img src="${pic}"/>`
 });
-
+}
+create()
+    
 
 DOMSelectors.form.addEventListener("submit", function(event){
     event.preventDefault();
     gallery.document.querySelector(".gallery")
     .insertAdjacentHTML(
         "beforeend", 
-        `<div class="card"> <h2 class="card header"${DOMSelectors.pic.value}</h2></div>` 
-        `<img src="${pic}"/>` 
-        
+        `<div class="card"> <h2 class="cardheader"${DOMSelectors.picoutput.innerHTML}</h2></div>` 
 
     );
 });

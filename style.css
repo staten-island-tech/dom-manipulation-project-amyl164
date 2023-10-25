@@ -5,3 +5,18 @@ body {
     margin: 0;
     font-family: 'Merriweather', serif;
 }
+
+.container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+.card{
+    padding: 2%;
+    margin: 2rem 0;
+    width: 23%;
+    height: 40vh;
+    
+}
