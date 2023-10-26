@@ -32,18 +32,30 @@ html,
     font-size: 3rem;
     background-color: lavenderblush;
     padding: 2%;
-    margin: 2rem 0;
+    margin: 2rem 2rem;
     border: 1px solid lavenderblush;
     border-radius: 5px;
     box-shadow: 10px 10px hotpink;
-    width: 23%;
-    height: 42vh;
+    width: 350px;
+    height: 35vh;
 }
 .cardimg {
     outline-offset: 1rem;
-    width: 350px;
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    margin: 4rem auto;
+    border-radius: 5px;
+}
+h3{
+    border-radius: 5px;
+    margin-top: 2rem;
 }
 
+h4{
+    border-radius: 5px;
+    margin-top: -2rem;
+}
 .cardtitle {
     background-color: lightpink;
     font-size: 5rem;

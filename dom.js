@@ -19,8 +19,8 @@ DOMSelectors.form.addEventListener("submit", function(event){
     const name = DOMSelectors.name.value
     const pic = DOMSelectors.pic.value
     function divCreator(){
-    form.insertAdjacentHTML(
-        "afterend",
+    DOMSelectors.container.insertAdjacentHTML(
+        "afterbegin",
         `<div class="container"> <div class="card"><h3>${name}</h3> <img src="${pic}" alt=""class="cardimg"><h4>${dogbreed}</h4> <button class="btn">Remove</button></div></div>`
     )};
     divCreator()
