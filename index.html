@@ -7,40 +7,28 @@
 </head>
 <body>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    <h1>What dog breed is the cutest? </h1>
-     <form action="" id="form">
-         <label for="dogbreed">Dog Breed</label>
-        <input type="text" name="dogbreed" class="dogbreed">
+    <h1 class="cardtitle">What dog breed is the cutest? </h1>
     
-        <label for="name">Your Dog's Name</label>
-        <input type="text" name="name" class="name">
-
-        <label for="pic">Picture of your dog</label>
-        <input type="text" name="pic" class="pic">
-        <input type="submit" value="Submit">
-    </form>
-
-    <div class="gallery">
-        <div class="class">
-            <h2 class="cardheader"></h2>
-        </div>
-    </div>
-
-    <div id="output">
-        <h2 id="dogbreedoutput"></h2>
-        <h2 id="nameoutput"></h2>
-        <h2 id="picoutput"></h2>
+    <div class="header">
+        <form action="" id="form">
+           <label for="dogbreed">Dog Breed</label>
+           <input type="text" name="dogbreed" class="dogbreed">
+       
+           <label for="name">Your Dog's Name</label>
+           <input type="text" name="name" class="name">
+   
+           <label for="pic">Picture of your dog</label>
+           <input type="text" name="pic" class="pic">
+           <input type="submit" value="Submit">
+       </form>
     </div>
 
     <div class="container">
         <div class="card">
-            <h2>dogname</h2>
-            <h3>dogbreed</h3>
-            <img src="https://cdn.britannica.com/60/8160-050-08CCEABC/German-shepherd.jpg" alt="">
-            <button>Remove</button>
+            <h3>Dogname</h3>
+            <img src="https://cdn.britannica.com/60/8160-050-08CCEABC/German-shepherd.jpg" alt="" class="cardimg">
+            <h4>dogbreed!</h4>
+            <button class="btn">Remove</button>
         </div>
     </div>
 

@@ -1,22 +1,62 @@
-body {
-    background-color: lightpink;
-    text-align: center;
+body,
+html,
+* {
+    font-size: 62.5%;
     padding: 0;
     margin: 0;
-    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+    background-color: lightpink;
 }
 
-.container{
+.container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around
+
+}
+#form {
+    font-size: 40px;
+}
+
+.header {
     display: flex;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
     justify-content: space-around
 }
-.card{
+
+.card {
+    font-size: 3rem;
+    background-color: lavenderblush;
     padding: 2%;
     margin: 2rem 0;
+    border: 1px solid lavenderblush;
+    border-radius: 5px;
+    box-shadow: 10px 10px hotpink;
     width: 23%;
-    height: 40vh;
-    
+    height: 42vh;
+}
+.cardimg {
+    outline-offset: 1rem;
+    width: 350px;
+}
+
+.cardtitle {
+    background-color: lightpink;
+    font-size: 5rem;
+    width: 140rem;
+    text-align: center;
+    margin: 6rem auto;
+    border: 3px solid palevioletred;
+    border-radius: 5px;
+    box-shadow: 10px 10px hotpink;
+   
+}
+.btn {
+    background-color: red;
+    border-radius: 10px;
+    margin-top: 1rem;
 }
