@@ -5,7 +5,7 @@ html,
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: lightpink;
+    background-color: lightblue;
 }
 
 .container {
@@ -30,12 +30,12 @@ html,
 
 .card {
     font-size: 3rem;
-    background-color: lavenderblush;
+    background-color: aliceblue;
     padding: 2%;
     margin: 2rem 2rem;
-    border: 1px solid lavenderblush;
+    border: 1px solid aliceblue;
     border-radius: 5px;
-    box-shadow: 10px 10px hotpink;
+    box-shadow: 10px 10px cornflowerblue;
     width: 350px;
     height: 35vh;
 }
@@ -57,15 +57,14 @@ h4{
     margin-top: 0rem;
 }
 .cardtitle {
-    background-color: lightpink;
+    background-color: lightblue;
     font-size: 5rem;
     width: 140rem;
     text-align: center;
     margin: 6rem auto;
-    border: 3px solid palevioletred;
+    border: 3px solid midnightblue;
     border-radius: 5px;
-    box-shadow: 10px 10px hotpink;
-   
+    box-shadow: 10px 10px cornflowerblue; 
 }
 .btn {
     background-color: red;
