@@ -44,7 +44,7 @@ html,
     width: 100%;
     height: 50%;
     object-fit: contain;
-    margin: 4rem auto;
+    margin: 2rem auto;
     border-radius: 5px;
 }
 h3{
@@ -54,7 +54,7 @@ h3{
 
 h4{
     border-radius: 5px;
-    margin-top: -2rem;
+    margin-top: 0rem;
 }
 .cardtitle {
     background-color: lightpink;
@@ -70,5 +70,5 @@ h4{
 .btn {
     background-color: red;
     border-radius: 10px;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
