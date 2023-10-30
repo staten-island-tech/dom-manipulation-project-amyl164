@@ -25,29 +25,27 @@ function insert(){
     }
     insert()
 
-
-    const removebuttons = 
-    document.querySelectorAll(".btn");
-    removebuttons.forEach((removebutton)=> {
-        removebutton.addEventListener("click",function(event){
-            const objectToRemove = 
-            event.target.parentElement;
-            objectToRemove.remove();
-        });
-    });
-    
-    DOMSelectors.button.addEventListener("click", function(event){
+    DOMSelectors.form.addEventListener("submit", function(event){
         event.preventDefault();
-        function clearfieldss(){
-            const element = document.querySelector("container");
-            element.remove();
+        function clearfields(){
             DOMSelectors.dogbreed.value = "";
             DOMSelectors.name.value = "";
             DOMSelectors.pic.value = "";
         }
-        clearfieldss()
+        clearfields()
     });
     
+    const removebuttons = document.querySelectorAll(".btn");
+    removebuttons.forEach((button)=> {
+        button.addEventListener("click",function(event){
+            const objectToRemove =  event.target.parentElement;
+            objectToRemove.remove();
+        });
+    });
+
+    
+    
+   
         
 
 
