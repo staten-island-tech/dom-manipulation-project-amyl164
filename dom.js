@@ -8,43 +8,43 @@ const DOMSelectors ={
     cardimg: document.querySelector(".cardimg"),
   
 };
-let count = 0;
 function insert(){
-DOMSelectors.form.addEventListener("submit", function(event){
-    count++
-    event.preventDefault();
-    const dogbreed = DOMSelectors.dogbreed.value
-    const name = DOMSelectors.name.value
-    const pic = DOMSelectors.pic.value
-    function divCreator(){
+    DOMSelectors.form.addEventListener("submit", function(event){
+        event.preventDefault();
+        const dogbreed = DOMSelectors.dogbreed.value
+        const name = DOMSelectors.name.value
+        const pic = DOMSelectors.pic.value
+        function divCreator(){
         DOMSelectors.container.insertAdjacentHTML(
             "afterbegin",
-            `<div id=${count} class="container"> <div class="card"><h3>${name}</h3> <img src="${pic}" alt=""class="cardimg"><h4>${dogbreed}</h4> <button id="btn">Remove</button></div></div>`
-    )};
-    divCreator()
-    function clearfields(){
-        const tempCount = count;
-        const button = document.getElementById("btn")
-        button.addEventListener("click", function(event){
-            event.preventDefault();
-            const element = document.getElementbyId(tempCount);
-            element.remove()
+            `<div class="container"> <div class="card"><h3>${name}</h3> <img src="${pic}" alt=""class="cardimg"><h4>${dogbreed}</h4> <button class="btn">Remove</button></div></div>`
+        )};
+        divCreator()
+    });
+    }
+    insert()
+    
+    DOMSelectors.button.addEventListener("click", function(event){
+        event.preventDefault();
+        function clearfieldss(){
+            const element = document.querySelector("container");
+            element.remove();
             DOMSelectors.dogbreed.value = "";
             DOMSelectors.name.value = "";
             DOMSelectors.pic.value = "";
         }
+        clearfieldss()
+    });
     
-        )};
-        clearfields()
-    
-    
-});
-}
-insert()
-
-
-
-
+    function clearfields(){
+        DOMSelectors.button.addEventListener("click", function(event){
+            event.preventDefault();
+            const dogbreed = "";
+            const name = "";
+            const pic = "";
+        })
+    }
+        
 
 
 
