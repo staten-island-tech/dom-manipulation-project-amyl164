@@ -6,7 +6,7 @@ const DOMSelectors ={
     container: document.querySelector(".container"),
     card: document.querySelector(".card"),
     cardimg: document.querySelector(".cardimg"),
-    button: document.querySelectorAll(".btns"),
+    button: document.querySelector(".btn"),
   
 };
 function insert(){
@@ -25,8 +25,9 @@ function insert(){
     }
     insert()
 
+
     const removebuttons = 
-    document.querySelectorAll(".btns");
+    document.querySelectorAll(".btn");
     removebuttons.forEach((removebutton)=> {
         removebutton.addEventListener("click",function(event){
             const objectToRemove = 
