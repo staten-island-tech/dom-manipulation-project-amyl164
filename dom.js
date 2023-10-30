@@ -6,6 +6,7 @@ const DOMSelectors ={
     container: document.querySelector(".container"),
     card: document.querySelector(".card"),
     cardimg: document.querySelector(".cardimg"),
+    button: document.querySelectorAll(".btns"),
   
 };
 function insert(){
@@ -23,6 +24,16 @@ function insert(){
     });
     }
     insert()
+
+    const removebuttons = 
+    document.querySelectorAll(".btns");
+    removebuttons.forEach((removebutton)=> {
+        removebutton.addEventListener("click",function(event){
+            const objectToRemove = 
+            event.target.parentElement;
+            objectToRemove.remove();
+        });
+    });
     
     DOMSelectors.button.addEventListener("click", function(event){
         event.preventDefault();
@@ -36,19 +47,7 @@ function insert(){
         clearfieldss()
     });
     
-    function clearfields(){
-        DOMSelectors.button.addEventListener("click", function(event){
-            event.preventDefault();
-            const dogbreed = "";
-            const name = "";
-            const pic = "";
-        })
-    }
         
-
-
-
-
 
 
 
