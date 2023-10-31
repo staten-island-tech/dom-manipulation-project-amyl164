@@ -71,3 +71,15 @@ h4{
     border-radius: 10px;
     margin-top: 2rem;
 }
+
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    .card { 
+        width: 100%;
+    }
+}

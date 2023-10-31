@@ -9,18 +9,26 @@ const DOMSelectors ={
     button: document.querySelector(".btn"),
   
 };
+function divCreator(dogbreed, name,pic){
+    DOMSelectors.container.insertAdjacentHTML(
+        "afterbegin",
+        `<div class="container"> <div class="card"><h3>${name}</h3> <img src="${pic}" alt=""class="cardimg"><h4>${dogbreed}</h4> <button class="btn">Remove</button></div></div>`
+    )};
 function insert(){
     DOMSelectors.form.addEventListener("submit", function(event){
         event.preventDefault();
         const dogbreed = DOMSelectors.dogbreed.value
         const name = DOMSelectors.name.value
         const pic = DOMSelectors.pic.value
-        function divCreator(){
-        DOMSelectors.container.insertAdjacentHTML(
-            "afterbegin",
-            `<div class="container"> <div class="card"><h3>${name}</h3> <img src="${pic}" alt=""class="cardimg"><h4>${dogbreed}</h4> <button class="btn">Remove</button></div></div>`
-        )};
-        divCreator()
+        divCreator(dogbreed, name, pic)
+        const removebuttons = document.querySelectorAll(".btn");
+        removebuttons.forEach((button)=> {
+            button.addEventListener("click",function(event){
+                const objectToRemove =  event.target.parentElement;
+                objectToRemove.remove();
+            });
+        });
+        
     });
     }
     insert()
@@ -34,43 +42,16 @@ function insert(){
         }
         clearfields()
     });
+   
     
-    const removebuttons = document.querySelectorAll(".btn");
+     const removebuttons = document.querySelectorAll(".btn");
     removebuttons.forEach((button)=> {
         button.addEventListener("click",function(event){
             const objectToRemove =  event.target.parentElement;
             objectToRemove.remove();
         });
-    });
-
-    
-    
-   
-        
+    }); 
 
 
 
-/* DOMSelectors.button.addEventListener("click", function(event){
-    event.preventDefault();
-    function clearfields(){
-        const container = document.querySelector(".container");
-        container.remove();
-        DOMSelectors.dogbreed.value = "";
-        DOMSelectors.name.value = "";
-        DOMSelectors.pic.value = "";
-    }
-    clearfields()
-});
-
-function remove(){
-    let btns = document.querySelectorAll(".btn");
-    btns.forEach((button)=> 
-    button.addEventListener('click', function(event){
-        console.log(event.target.parentElement);
-
-    }
-    ));
-}
-remove();
- */
 
