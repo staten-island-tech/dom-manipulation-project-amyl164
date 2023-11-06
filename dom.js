@@ -44,13 +44,7 @@ function insert(){
     });
    
     
-     const removebuttons = document.querySelectorAll(".btn");
-    removebuttons.forEach((button)=> {
-        button.addEventListener("click",function(event){
-            const objectToRemove =  event.target.parentElement;
-            objectToRemove.remove();
-        });
-    }); 
+  
 
 
 
