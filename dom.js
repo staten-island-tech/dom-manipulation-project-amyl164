@@ -43,9 +43,3 @@ function insert(){
         clearfields()
     });
    
-    
-  
-
-
-
-
